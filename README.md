@@ -1,1 +1,2 @@
-# o-magico-de-oz
+# magico-de-oz
+o-magico-de-oz

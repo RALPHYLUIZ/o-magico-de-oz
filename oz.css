@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./img/th-wizard-of-oz-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+
+
+}
+header{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 165px;   
+}
+
+header a{
+    color: rgba(153, 215, 166, 76%);;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    border-bottom: 4px solid transparent;
+}
+
+header a:hover{
+    border-bottom: 4px solid rgba(153, 215, 166, 76%);
+
+}
+
+header .logo-oz-amarelo:hover{
+    border-bottom: 1px solid transparent;
+}
+
+main{
+    flex-grow: 1;
+    display:flex;
+}
+
+.filme-container{
+    width: 405px;
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.descricao{
+    width: 50px;
+    height: 50PX;
+    flex-grow: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+
+.descricao P{
+    width: 720px;
+    font-weight: 500;
+    font-family: 'Rozha One', serif;;
+    font-size: 3rem;
+    color: #EDE74E;
+}
+.descricao p{
+    text-align: center;
+}
+
+.trailers{
+    height: 700px;
+    width: 648px;
+    align-items: end;
+    display: flex;
+    position: relative;
+    right: 1128px;
+    gap: 60px;
+
+}
+
+.trailers a{
+    justify-content: center;
+    display: flex;
+    
+
+}
+
+.social-container {
+    height: 624px;
+    width: 85px;
+    color:#EDE74E;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 38px;
+
+}
+
+/* TABLET */
+@media (max-width:768px){
+    body{
+        padding: 32px 0px 0px 0px;
+        background-image: url(./img/back\ tablet.png);
+    }
+
+    header {
+        gap: 15px;
+
+    }
+
+    header .logo-oz-amarelo{
+        height: 50px;
+        display: flex;
+    }
+
+    .social-container{
+        display: none;
+    }
+    .filme-container img{
+        display: flex;
+        width: 150px;
+        bottom: 100px;
+        left: 500px;
+        right: 0;
+        position: absolute;
+        flex-direction: column;
+
+
+    }
+    .descricao{
+        flex-direction: column;
+        padding: 60px;
+        justify-content: flex-start;
+        flex-grow: 0;
+    }
+    .descricao p{
+        font-size: 40px;
+        left: -80px;
+        position: absolute;
+        align-items: left;
+        text-align: center;
+    }
+    
+    footer{
+        display: none;
+    }
+}
+
