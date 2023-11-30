@@ -45,6 +45,7 @@ header .logo-oz-amarelo:hover{
 main{
     flex-grow: 1;
     display:flex;
+    position: relative;
 }
 
 .filme-container{
@@ -132,12 +133,10 @@ main{
         width: 150px;
         bottom: 100px;
         left: 500px;
-        right: 0;
         position: absolute;
         flex-direction: column;
-
-
     }
+
     .descricao{
         flex-direction: column;
         padding: 60px;
