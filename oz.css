@@ -84,8 +84,9 @@ main{
     align-items: end;
     display: flex;
     position: relative;
-    right: 1128px;
+    /* right: 1128px; */
     gap: 60px;
+    /* z-index: 999; */
 
 }
 
@@ -112,7 +113,7 @@ main{
 @media (max-width:768px){
     body{
         padding: 32px 0px 0px 0px;
-        background-image: url(./img/back\ tablet.png);
+        background-image: url(./img/backtablet.png);
     }
 
     header {
@@ -129,12 +130,32 @@ main{
         display: none;
     }
     .filme-container img{
-        display: flex;
+        /* display: flex; */
+        flex-direction: column;
         width: 150px;
         bottom: 100px;
         left: 500px;
         position: absolute;
+    }
+    .trailers a:nth-child(3){
+        display: none;
+    }
+
+    .trailers a{
         flex-direction: column;
+        position: relative;
+        right: 200px;
+        height: 30px;
+        width: 20px;
+        
+
+    }
+
+    .trailers img{
+        position: absolute;
+        flex-direction: column;
+        border-radius: 8px;
+
     }
 
     .descricao{
@@ -155,4 +176,3 @@ main{
         display: none;
     }
 }
-
